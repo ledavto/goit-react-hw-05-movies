@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import React from 'react';
 
-const FindForm = () => {
+export const FindForm = () => {
   const [listSearch, setListSearch] = useState([]);
   const [page, setPage] = useState(1);
   // const [totalPages, setTotalPages] = useState(0);
@@ -60,5 +60,3 @@ const FindForm = () => {
     </>
   );
 };
-
-export default FindForm;

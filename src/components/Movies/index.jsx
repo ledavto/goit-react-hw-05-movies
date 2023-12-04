@@ -1,8 +1,8 @@
-import FindForm from 'components/FindForm';
+import { FindForm } from 'components/FindForm';
 import React from 'react';
 // import { useNavigate, useSearchParams } from 'react-router-dom';
 
-const Movies = ({ onSubmit }) => {
+const Movies = () => {
   // const [searchParams, setSearchParams] = useSearchParams();
 
   return (
