@@ -2,14 +2,14 @@ import FindForm from 'components/FindForm';
 import React from 'react';
 // import { useNavigate, useSearchParams } from 'react-router-dom';
 
-export const Movies = () => {
+const Movies = ({ onSubmit }) => {
   // const [searchParams, setSearchParams] = useSearchParams();
 
   return (
-    <div className="searchbar">
+    <header className="searchbar">
       <FindForm />
-    </div>
+    </header>
   );
 };
 
-// export default Movies;
+export default Movies;
