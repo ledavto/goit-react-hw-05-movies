@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import React from 'react';
 
-export const FindForm = () => {
+const FindForm = () => {
   const [listSearch, setListSearch] = useState([]);
   const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
+  // const [totalPages, setTotalPages] = useState(0);
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query');
   // const page = searchParams.get('page');
@@ -19,7 +19,7 @@ export const FindForm = () => {
         // console.log('Search ', data);
         setListSearch(prev => [...data.results]);
         setPage(prev => prev++);
-        setTotalPages(data.total_pages);
+        // setTotalPages(data.total_pages);
       });
   }, [query, page]);
 
@@ -60,3 +60,5 @@ export const FindForm = () => {
     </>
   );
 };
+
+export default FindForm;

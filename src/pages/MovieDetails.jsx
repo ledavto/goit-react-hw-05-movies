@@ -19,7 +19,7 @@ const MovieDetails = () => {
 
   useEffect(() => {
     api.getMovieDetail(movieId).then(data => {
-      console.log('data', data);
+      // console.log('data', data);
       setInfoMovie(prev => ({ ...data }));
       setIsLoader(true);
     });
