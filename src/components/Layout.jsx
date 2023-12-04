@@ -4,7 +4,7 @@ import React from 'react';
 
 export const Layout = () => {
   return (
-    <div>
+    <>
       <header className="nav nav-pills nav-fill">
         <NavLink className="nav-item nav-link" to="/">
           Home
@@ -19,6 +19,6 @@ export const Layout = () => {
         </Suspense>
       </main>
       <footer></footer>
-    </div>
+    </>
   );
 };

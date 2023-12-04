@@ -6,9 +6,9 @@ const Movies = () => {
   // const [searchParams, setSearchParams] = useSearchParams();
 
   return (
-    <header className="searchbar">
+    <div className="searchbar">
       <FindForm />
-    </header>
+    </div>
   );
 };
 
