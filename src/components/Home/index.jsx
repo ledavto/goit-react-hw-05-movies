@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     api.getTrend().then(data => {
-      // console.log('data', data);
+      console.log('data', data);
       setMovies(prev => [...data.results]);
     });
   }, []);
@@ -20,7 +20,7 @@ const Home = () => {
       {movies.map(movie => (
         <li key={movie.id}>
           <Link to={`/movies/${movie.id}`} state={{ from: location }}>
-            {movie.title}
+            {movie.title ? movie.title : movie.name}
           </Link>
         </li>
       ))}
