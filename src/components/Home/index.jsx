@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     api.getTrend().then(data => {
-      console.log('data', data);
+      // console.log('data', data);
       setMovies(prev => [...data.results]);
     });
   }, []);
